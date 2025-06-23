@@ -22,6 +22,6 @@
     "typescript": "^5.1.6"
   },
   "peerDependencies": {
-    "@prisma/client": "^5.1.1 || >= 5.1.1 <= 6.2.x"
+    "@prisma/client": "^5.1.1 || >= 5.1.1 <= 6.20.x"
   }
 }

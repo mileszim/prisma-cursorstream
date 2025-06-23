@@ -1,41 +1,53 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
-devDependencies:
-  '@prisma/client':
-    specifier: ^5.1.1
-    version: 5.1.1
-  '@types/node':
-    specifier: ^20.5.1
-    version: 20.5.1
-  typescript:
-    specifier: ^5.1.6
-    version: 5.1.6
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      '@prisma/client':
+        specifier: ^5.1.1
+        version: 5.22.0
+      '@types/node':
+        specifier: ^20.5.1
+        version: 20.19.1
+      typescript:
+        specifier: ^5.1.6
+        version: 5.8.3
 
 packages:
 
-  /@prisma/client@5.1.1:
-    resolution: {integrity: sha512-fxcCeK5pMQGcgCqCrWsi+I2rpIbk0rAhdrN+ke7f34tIrgPwA68ensrpin+9+fZvuV2OtzHmuipwduSY6HswdA==}
+  '@prisma/client@5.22.0':
+    resolution: {integrity: sha512-M0SVXfyHnQREBKxCgyo7sffrKttwE6R8PMq330MIUF0pTwjUhLbW84pFDlf06B27XyCR++VtjugEnIHdr07SVA==}
     engines: {node: '>=16.13'}
-    requiresBuild: true
     peerDependencies:
       prisma: '*'
     peerDependenciesMeta:
       prisma:
         optional: true
-    dependencies:
-      '@prisma/engines-version': 5.1.1-1.6a3747c37ff169c90047725a05a6ef02e32ac97e
-    dev: true
 
-  /@prisma/engines-version@5.1.1-1.6a3747c37ff169c90047725a05a6ef02e32ac97e:
-    resolution: {integrity: sha512-owZqbY/wucbr65bXJ/ljrHPgQU5xXTSkmcE/JcbqE1kusuAXV/TLN3/exmz21SZ5rJ7WDkyk70J2G/n68iogbQ==}
-    dev: true
+  '@types/node@20.19.1':
+    resolution: {integrity: sha512-jJD50LtlD2dodAEO653i3YF04NWak6jN3ky+Ri3Em3mGR39/glWiboM/IePaRbgwSfqM1TpGXfAg8ohn/4dTgA==}
 
-  /@types/node@20.5.1:
-    resolution: {integrity: sha512-4tT2UrL5LBqDwoed9wZ6N3umC4Yhz3W3FloMmiiG4JwmUJWpie0c7lcnUNd4gtMKuDEO4wRVS8B6Xa0uMRsMKg==}
-    dev: true
-
-  /typescript@5.1.6:
-    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
+
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
+snapshots:
+
+  '@prisma/client@5.22.0': {}
+
+  '@types/node@20.19.1':
+    dependencies:
+      undici-types: 6.21.0
+
+  typescript@5.8.3: {}
+
+  undici-types@6.21.0: {}
