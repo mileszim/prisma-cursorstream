@@ -1,5 +1,5 @@
 {
-  "name": "prisma-cursorstream",
+  "name": "@mileszim/prisma-cursorstream",
   "version": "0.4.0",
   "description": "Prisma Stream Client Extension (Cursor-based Implementation)",
   "main": "./dist/index.js",
